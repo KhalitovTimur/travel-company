@@ -1,0 +1,147 @@
+body {
+    font-family: 'EB Garamond', serif;
+    background-color: white;
+}
+
+form {
+    width: 600px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    min-height: 50px;
+    resize:vertical;
+}
+
+.icons-nav-wrap li {
+    margin-right: 20px;
+    font-weight: 800;
+}
+
+.greeting-wrap {
+    height: 600px;
+}
+
+.story-wrap {
+    height: 400px;
+}
+
+.features-wrap {
+    height: 500px;
+}
+
+.story-wrap2 {
+    height: 200px;
+}
+
+.greeting-wrap img,
+.story-wrap img,
+.story-wrap2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+}
+
+.carousel:hover .carousel-caption {
+    display: block!important;
+}
+
+.carousel:hover .carousel-inner {
+    filter:opacity(80%);
+}
+
+.carousel:hover .carousel-control-prev-icon,.carousel:hover .carousel-control-next-icon {
+    display: block!important;
+}
+
+.carousel-item img {
+    margin-left: -.36em;
+}
+
+.form_control {
+    width: 30%;
+}
+
+#name,#email,#telephone {
+    width: 100%;
+}
+
+.checkbox-list, .radio-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.form-group, select   {
+    width: 100%;
+    height: 30px;
+}
+
+
+.footer-icon {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+}
+
+.footer-icon:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+figure div img{
+    height: 300px;
+    object-fit: cover;
+}
+
+
+@media (max-width:992px) {
+
+    .border:nth-of-type(3),
+    .border:nth-of-type(5) {
+        border-left-style: none!important;
+    }
+
+    .border:nth-of-type(4) {
+        border-right-style: none!important;
+        border-left-style:solid!important;
+        border-left-width: 1px!important;
+        border-left-color:#e8ebed!important;
+    }
+
+    .carousel-item img:nth-of-type(1),.carousel-item img:nth-of-type(2) {
+        width: 50%!important;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .greeting-wrap, .story-wrap, .form_control {
+        height: 100%;
+    }
+
+    .card-body {
+        padding: 2.25rem;
+    }
+
+    .form_control {
+        width: 100%;
+    }
+
+    .input-wrap {
+        display: block!important;
+    }
+
+    .carousel-item img:nth-of-type(1),.carousel-item img:nth-of-type(2) {
+        width: 100%!important;
+    }
+
+}
